@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#telalogin{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgb(164, 164, 255),rgb(43, 124, 172));
+}
+#formularioLogin{
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    background-image: linear-gradient(rgb(125, 212, 252), rgb(23, 28, 97));
+    height: 100px;
+}
+.barra_navegacao{
+    display: flex;
+    padding: 5px;
+}
+.barra_navegacao a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.barra_navegacao a.selecionar:hover{
+    background-color: rgba(0, 255, 255, 0.274);
+    cursor: pointer;;
+}
+.barra_navegacao a img{
+    width: 50px;
+}
+
+.listaformularios{
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+.campospadroes{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 90%;
+}
+.listaformularios button{
+    width: 100%;
+    padding: 7px;
+    margin: 10px auto;
+}
+.idpergunta{
+    position: relative;
+    left: 1px;
+    top: -10px;
+    background-color: rgb(1, 73, 167);
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+    padding: 5px 15px;
+    width: 25px;
+    border-radius: 2%;
+}
+
+.cabecalho{
+    background-image: linear-gradient(rgb(125, 212, 252), rgb(23, 28, 97));
+    display: flex;
+    flex-direction: column;
+}
+.login_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_info button{
+    margin: 10px;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(198, 225, 255);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.login_info button:hover{
+    background-image: linear-gradient(rgb(90, 130, 190),rgb(6, 6, 138));
+    color: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 46, 0.5);
+    
+}
+.login_info p{
+    text-indent: 10px;
+    font-size: 18px;
+}
+
+/*FORMATAÇÃO INPUTS FORMULARIO*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botao_separador_senso{
+    width: 100%;
+    height: 60px;
+    margin: 10px auto;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+}
+.icon_bt_senso{
+    width: 50px;
+    margin: 10px;
+}
+.icon_bt_check{
+    width: 40px;
+    position: absolute;
+    right: 10px;
+}
+.bt_envia_form{
+    width: 100px;
+    padding: 5px;
+    margin: 10px auto;
+}
+.legenda_bt_senso{
+    text-align: left;
+    font-size: 14pt;
+    
+}
+.font_color_branco{
+    color: white;
+}
+.btsensoAzul{
+    background-image: linear-gradient(rgb(143, 221, 252), rgb(4, 40, 160));
+}
+.btsensoAmarelo{
+    background-image: linear-gradient(rgb(246, 255, 125), rgb(177, 110, 24));
+}
+.btsensoVerde{
+    background-image: linear-gradient(rgb(115, 241, 77), rgb(18, 105, 0));
+}
+.btsensoVermelho{
+    background-image: linear-gradient(rgb(255, 125, 142), rgb(184, 0, 0));
+}
+.btsensoSky{
+    background-image: linear-gradient(rgb(127, 251, 255), rgb(2, 104, 107));
+}
+td{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    margin: 8px auto;
+    padding: 5px;
+}
+.coletion_input{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: auto;
+}
+.radio_input_separador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

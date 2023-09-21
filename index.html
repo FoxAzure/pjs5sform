@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/base.css">
+    <title>5S Agrovale - Ínicio</title>
+</head>
+<body onload="validarcessao()">
+    <header class="cabecalho">
+        <div class="login_info">
+            <p id="logado"></p>
+            <button onclick="encerrar()">Sair</button>
+        </div>
+        <nav class="barra_navegacao">
+            <a href="#">
+                <img src="galery/icons/formularios.png" alt="">
+                <p>formulários</p>
+            </a>
+            <a href="planodeacao.html" class="selecionar">
+                <img src="galery/icons/enquete.png" alt="">
+                <p>Plano de Ação</p>
+            </a>
+            <a href="index.html" class="selecionar">
+                <img src="galery/icons/relatorio2.png" alt="">
+                <p>Relatórios</p>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1>Formularios</h1>
+        <ul class="listaformularios">
+            <li><button onclick="formulary('RESTAURANTE - COPA')">RESTAURANTE - COPA</button></li>
+            <li><button onclick="formulary('PROD, MAN, DEP.')">PROD, MAN, DEP.</button></li>
+            <li><button onclick="formulary('ÁREAS EXTERNAS')">ÁREAS EXTERNAS</button></li>
+            <li><button onclick="formulary('ADMINISTRAÇÃO')">ADMINISTRAÇÃO</button></li>
+            <li><button onclick="formulary('BANHEIRO')">BANHEIRO</button></li>
+
+        </ul>
+    </main>
+    
+</body>
+    <script src="functions/system.js"></script>
+    <script src="functions/formulary.js"></script>
+</html>

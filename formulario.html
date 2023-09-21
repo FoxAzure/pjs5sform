@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/base.css">
+    <title>5S Agrovale - Formulario</title>
+</head>
+<body onload="preencherdadosauto()">
+
+    <header class="cabecalho">
+        <div class="login_info">
+            <p id="logado"></p>
+            <button onclick="encerrar()">Sair</button>
+        </div>
+        <nav class="barra_navegacao">
+            <a href="index.html" class="selecionar">
+                <img src="galery/icons/formularios.png" alt="">
+                <p>formulários</p>
+            </a>
+            <a href="planodeacao.html" class="selecionar">
+                <img src="galery/icons/enquete.png" alt="">
+                <p>Plano de Ação</p>
+            </a>
+            <a href="relatorios.html" class="selecionar">
+                <img src="galery/icons/relatorio2.png" alt="">
+                <p>Relatórios</p>
+            </a>
+        </nav>
+    </header>
+
+
+    <form action="" id="form5s">
+        <div class="campospadroes">
+            <select name="" id="">
+                <option value=""></option>
+                <option value="SALA APOIO AGRÍCOLA">SALA APOIO AGRÍCOLA</option>
+                <option value="SALA APOIO PLANTIO">SALA APOIO PLANTIO</option>
+                <option value="SALA APOIO MECANIZAÇÃO">SALA APOIO MECANIZAÇÃO</option>
+                <option value="SALA CONTROLE AGRÍCOLA">SALA CONTROLE AGRÍCOLA</option>
+                <option value="SALA GERÊNCIA AGRÍCOLA">SALA GERÊNCIA AGRÍCOLA</option>
+            </select>
+    
+            <input type="text" name="data[formulario]]" id="tipoform" disabled>
+            <input type="text" name="data[hora]" id="data" disabled>
+            <input type="text" name="data[matricula]" id="matfunc" disabled>
+            <input type="text" name="data[funcionario]" id="nomefunc" disabled>
+        </div>
+
+        <button 
+            onclick="exibirperguntas('tabela_utilization')" class="botao_separador_senso btsensoAzul">
+            <img src="galery/icons/utilizacao.png" alt="" class="icon_bt_senso">
+            <div class="legenda_bt_senso">
+                <p>Seiri</p>
+                <h3 class="font_color_branco">整理 - UTILIZAÇÃO</h3>
+                
+            </div>
+            <img src="galery/icons/check.png" alt="" class="icon_bt_check" id="tabela_utilization_check" style="display: none;">
+        </button>
+        <table id="tabela_utilization" style="display: none;">
+            
+            
+        </table>
+
+        <button 
+            onclick="exibirperguntas('tabela_ordenacao')" class="botao_separador_senso btsensoVermelho">
+            <img src="galery/icons/ordenacao.png" alt="" class="icon_bt_senso">
+            <div class="legenda_bt_senso">
+                <p>Seiton</p>
+                <h3 class="font_color_branco">整頓 - ORDENAÇÃO</h3>
+            </div>
+            <img src="galery/icons/check.png" alt="" class="icon_bt_check" id="tabela_ordenacao_check" style="display: none;">
+        </button>
+        <table id="tabela_ordenacao" style="display: none;">
+            
+            
+        </table>
+
+        <button 
+            onclick="exibirperguntas('tabela_limpeza')" class="botao_separador_senso btsensoAmarelo">
+            <img src="galery/icons/limpeza.png" alt="" class="icon_bt_senso">
+            <div class="legenda_bt_senso">
+                <p>Seisō</p>
+                <h3 class="font_color_branco">清掃 - LIMPEZA</h3>
+            </div>
+            <img src="galery/icons/check.png" alt="" class="icon_bt_check" id="tabela_limpeza_check" style="display: none;">
+        </button>
+        <table id="tabela_limpeza" style="display: none;">
+            
+            
+        </table>
+
+        <button 
+            onclick="exibirperguntas('tabela_saude')" class="botao_separador_senso btsensoVerde">
+            <img src="galery/icons/saude.png" alt="" class="icon_bt_senso">
+            <div class="legenda_bt_senso">
+                <p>Seiketsu</p>
+                <h3 class="font_color_branco">清潔 - SAÚDE</h3>
+            </div>
+            <img src="galery/icons/check.png" alt="" class="icon_bt_check" id="tabela_saude_check" style="display: none;">
+        </button>
+        <table id="tabela_saude" style="display: none;">
+            
+            
+        </table>
+
+        <button 
+            onclick="exibirperguntas('tabela_autodisciplina')" class="botao_separador_senso btsensoSky">
+            <img src="galery/icons/disciplina.png" alt="" class="icon_bt_senso">
+            <div class="legenda_bt_senso">
+                <p>Shitsuke</p>
+                <h3 class="font_color_branco">躾 - AUTODISCIPLINA</h3>
+            </div>
+            <img src="galery/icons/check.png" alt="" class="icon_bt_check" id="tabela_autodisciplina_check" style="display: none;">
+        </button>
+        <table id="tabela_autodisciplina" style="display: none;">
+            
+            
+        </table>
+
+
+        <input type="submit" value="ENVIAR" class="bt_envia_form">
+        <input type="reset" value="LIMPAR" class="bt_envia_form" style="display: none;">
+
+    </form>
+</body>
+    <script src="functions/system.js"></script>
+    <script src="functions/formulary.js"></script>
+    <script src="functions/main.js" type="module"></script>
+</html>
