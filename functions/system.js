@@ -7,6 +7,8 @@ function validarcessao(){
 
     if(login == false){
         window.location.href = "erro.html"
+    }else if(login == null){
+        window.location.href = "erro.html"
     }
 
     var logado = document.getElementById('logado')
